@@ -16,11 +16,11 @@ jobs:
                 # repo to copy from
                 repo-source: r1
                 # repo to copy to
-                repo-destination: r2
+                repo-destination: test.github.io
                 # owner of the repo to take issue from
                 owner-source: tomtanner
                 # owner of the repo to save issue to
-                owner-destination: tomtanner
+                owner-destination: cnctrain
                
        
             
