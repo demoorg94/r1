@@ -1,4 +1,4 @@
-name: 'automate issue transfer'
+name: automate issue transfer
 
 on:
  issues:
