@@ -5,7 +5,7 @@ on:
         types: [opened]
 
 jobs:
-    auto-assign:
+    issue transfer:
         runs-on: ubuntu-latest
         steps:
             - name: Transfer Issue
