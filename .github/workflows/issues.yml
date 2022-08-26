@@ -14,7 +14,7 @@ jobs:
               uses: HosniD/transfer-issue@v0.1.6
               with:
                 # repo to copy from
-                repo-source: r1
+                #repo-source: r1
                 # repo to copy to
                 repo-destination: r2
                 # owner of the repo to take issue from
