@@ -14,9 +14,9 @@ jobs:
               uses: HosniD/transfer-issue@v0.1.6
               with:
                 # repo to copy from
-                repo-source: https://github.com/tomtanner/r1
+                repo-source: https://github.com/tomtanner/r1.git
                 # repo to copy to
-                repo-destination: https://github.com/tomtanner/r2
+                repo-destination: https://github.com/tomtanner/r2.git
                 # owner of the repo to take issue from
                 owner-source: tomtanner
                 # owner of the repo to save issue to
