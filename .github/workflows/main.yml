@@ -18,7 +18,7 @@ jobs:
            # Your GitHub account username
             username: tomtanner
            # Secret toeken registered in your GitHub Account
-            token_secret: 5432
+            token_secret: SECRET
                
        
             
