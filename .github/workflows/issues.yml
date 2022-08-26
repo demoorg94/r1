@@ -13,8 +13,6 @@ jobs:
               # uses: HosniD/transfer-issue@b88e14515d235013f18bf549dce769ace3ccfe80
               uses: HosniD/transfer-issue@v0.1.6
               with:
-                # github personal access token, it is safer to add it should be added to your repo secrets
-                auth-secret: 5432
                 # repo to copy from
                 repo-source: https://github.com/tomtanner/r1
                 # repo to copy to
@@ -23,8 +21,6 @@ jobs:
                 owner-source: tomtanner
                 # owner of the repo to save issue to
                 owner-destination: tomtanner
-                # issues with this labels will be created in destination repo: e.g. feature,bug,test...
-                labels: test
-                # status of issues to be created in destination repo
-                state: todo
+               
+       
             
