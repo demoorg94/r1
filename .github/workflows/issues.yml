@@ -11,7 +11,7 @@ jobs:
             - name: Transfer Issue
               # You may pin to the exact commit or the version.
               uses: HosniD/transfer-issue@b88e14515d235013f18bf549dce769ace3ccfe80
-              uses: HosniD/transfer-issue@v0.1.6
+              #uses: HosniD/transfer-issue@v0.1.6
               with:
                 # repo to copy from
                 repo-source: r1
