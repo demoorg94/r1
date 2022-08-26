@@ -5,7 +5,7 @@ on:
         types: [opened]
 
 jobs:
-    issue transfer:
+    issue-transfer:
         runs-on: ubuntu-latest
         steps:
             - name: Transfer Issue
