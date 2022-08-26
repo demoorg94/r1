@@ -1,0 +1,5 @@
+name: on issue creation
+on:
+  label:
+    types:
+      - created
