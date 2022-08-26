@@ -1,4 +1,4 @@
-name: Greeting from Mona
+name: issues example
 
 on:
   issues:
