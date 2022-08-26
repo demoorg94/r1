@@ -1,0 +1,6 @@
+name: 'automate issue transfer'
+
+on:
+ issues:
+   opened
+ 
