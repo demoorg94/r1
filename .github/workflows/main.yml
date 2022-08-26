@@ -1,6 +1,10 @@
 name: Greeting from Mona
 
-on: push
+on:
+  issues:
+    types:
+      - created
+
 
 jobs:
   my-job:
