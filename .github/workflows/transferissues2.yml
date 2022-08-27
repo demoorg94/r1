@@ -11,5 +11,5 @@ jobs:
             - name: Transfer Issue & Create Stub
               uses: lando/transfer-issue-action@v2
               with:
-                token: ${{ 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 }}
+                token: ${{ ts.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 }}
                 router: roger:r2
