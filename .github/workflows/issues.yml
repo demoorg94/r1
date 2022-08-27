@@ -1,4 +1,4 @@
-name: Issue assignment
+name: Issue transfer
 
 on:
     issues:
@@ -10,17 +10,17 @@ jobs:
         steps:
             - name: Transfer Issue
               # You may pin to the exact commit or the version.
-              uses: HosniD/transfer-issue@b88e14515d235013f18bf549dce769ace3ccfe80
-              #uses: HosniD/transfer-issue@v0.1.6
+              #uses: HosniD/transfer-issue@b88e14515d235013f18bf549dce769ace3ccfe80
+              uses: HosniD/transfer-issue@v0.1.6
               with:
                 # repo to copy from
-                #repo-source: r1
+                repo-source: r1
                 # repo to copy to
-                repo-destination: test.github.io
+                repo-destination: r2
                 # owner of the repo to take issue from
                 owner-source: tomtanner
                 # owner of the repo to save issue to
-                owner-destination: cnctrain
+                owner-destination: tomtanner
                
        
             
