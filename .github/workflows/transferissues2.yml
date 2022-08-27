@@ -12,4 +12,4 @@ jobs:
               uses: lando/transfer-issue-action@v2
               with:
                 token: ts.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
-                router: roger:r2
+                router: bug:r2
