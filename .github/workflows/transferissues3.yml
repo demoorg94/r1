@@ -1,0 +1,17 @@
+name: Transfer issues
+on:
+    issues:
+        types: [opened]
+
+jobs:
+  transfer_issues:
+    name: Transfer issues
+    runs-on: ubuntu-latest
+    steps:
+      - uses: smockle/action-transfer-issues@dist
+        with:
+          source: tomtanner/r1
+          destination: tomtanner/r2
+          issue_numbers: "23 24 25 26"
+        env:
+          GH_TOKEN: ts.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
