@@ -1,26 +1,28 @@
-name: Issue transfer
-
+name: Manual Issue Transer Action Test
 on:
-    issues:
-        types: [opened]
+  issues:
+    types:
+      - labeled
 
 jobs:
-    issue-transfer:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Transfer Issue
-              # You may pin to the exact commit or the version.
-              #uses: HosniD/transfer-issue@b88e14515d235013f18bf549dce769ace3ccfe80
-              uses: HosniD/transfer-issue@v0.1.6
-              with:
-                # repo to copy from
-                repo-source: r1
-                # repo to copy to
-                repo-destination: r2
-                # owner of the repo to take issue from
-                owner-source: tomtanner
-                # owner of the repo to save issue to
-                owner-destination: tomtanner
-               
-       
-            
+  test-action:
+    runs-on: ${{ matrix.os }}
+    env:
+      TERM: xterm
+    strategy:
+      matrix:
+        os:
+          - ubuntu-20.04
+        router:
+          - manual_issue_transfer_action_test:r2
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Manual Action Test
+        id: test_action
+        uses: ./
+        with:
+          token: ts.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
+          router: ${{ matrix.router }}
+          apply_label: MANUAL ACTION TEST
+          debug: false
