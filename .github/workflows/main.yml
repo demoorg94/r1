@@ -9,8 +9,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Transfer Issue & Create Stub
-          # uses: lando/transfer-issue-action@6467276379d1e7c4c057e79fbb48b2fddf613990
-          #uses: lando/transfer-issue-action@v2.0.3
+            #uses: lando/transfer-issue-action@6467276379d1e7c4c057e79fbb48b2fddf613990
+            uses: lando/transfer-issue-action@v2.0.3
             with: 
              # A label to repo routing in the form "LABEL:REPO"
               router:  hm:r2
